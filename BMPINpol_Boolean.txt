@@ -1,0 +1,14 @@
+#system of Boolean functions 
+
+targets, factors
+Auxin, Auxin
+ABP1, !Auxin
+ROP6, Auxin & !ABP1
+MechanicalTension, Auxin & !Exocytosis
+Exocytosis, MechanicalTension
+Endocytosis, !MechanicalTension & !ROP6
+PID, Auxin & !PP2AGNOM
+PP2AGNOM, PP2AGNOM & !PID
+PINAbundance, Exocytosis & Auxin
+Apicalpolarity, PINAbundance & !Endocytosis & PID
+Basalpolarity, PINAbundance & !Endocytosis & PP2AGNOM
